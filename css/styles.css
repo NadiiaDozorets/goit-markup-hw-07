@@ -51,7 +51,7 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 1199px;
   }
@@ -145,12 +145,30 @@ img {
   margin-right: 0;
 }
 
-.site-nav .link,
-.link-item .link-tel-email {
+.site-nav .link {
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.link-tel-email {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link-tel-email {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+
+  .tel {
+    padding-top: 5px;
+    padding-bottom: 21px;
+  }
 }
 
 .icon-header {
@@ -247,15 +265,17 @@ ul {
   color: var(--color-inverted);
 }
 
-.link-item {
-  display: flex;
-  margin-left: 315px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .link-item {
-    flex-direction: column;
+    display: block;
     margin-left: 96px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-item {
+    display: flex;
+    margin-left: 315px;
   }
 }
 
@@ -1266,7 +1286,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .replay {
     display: flex;
     margin-left: 93px;
