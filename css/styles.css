@@ -47,7 +47,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 480px;
+    max-width: 767px;
   }
 }
 
@@ -535,7 +535,7 @@ ul {
 @media screen and (max-width: 767px) {
   .section-item {
     margin-right: 0;
-    /*width: 100%;*/
+    /* width: 100%;*/
   }
 }
 
@@ -593,10 +593,21 @@ ul {
 
 @media screen and (max-width: 767px) {
   .hero-img {
-    height: 320px;
-    width: 767px;
+    height: 400px;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/Mobile/people@1x_480-400.jpg');
   }
 }
+
+/*@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-img {
+    height: 400px;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Tablet/people@1x_768-400.jpg');
+  }
+}*/
 
 .section-team {
   background-color: var(--color-secondary);
@@ -1201,7 +1212,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .input-email {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -1289,7 +1300,17 @@ ul {
   border-color: var(--color-inverted);
 }
 
-/*.form-footer {
-  display: block;
-  width: 100vw;
-}*/
+@media screen and (max-width: 479px) {
+  .form-footer {
+    display: block;
+    width: 100vw;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .form-footer {
+    display: block;
+    width: 450px;
+  }
+}
