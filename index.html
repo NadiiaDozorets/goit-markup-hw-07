@@ -23,10 +23,15 @@
         <a class="logo logo-header" href="./index.html"
           >Web<span class="logo-studio-header">Studio</span></a
         >
-        <button class="menu-button is-open" aria-expanded="false" type="button" aria-controls="mobile-menu">
+        <button
+          class="menu-button is-open"
+          aria-expanded="false"
+          type="button"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40" aria-label="Перевимикач мобільного меню">
-            <use class="icon-cross" href="./images/symbol-defts.svg#antenna"> </use>
-            <use class="icon-menu" href="./images/symbol-defts.svg#clock"> </use>
+            <use class="icon-cross" href="./images/cross-menu.svg#cross"></use>
+            <use class="icon-menu" href="./images/cross-menu.svg#menu"></use>
           </svg>
         </button>
         <div class="menu-desktop menu-container js-menu-container" id="mobile-menu">
@@ -64,23 +69,18 @@
           </ul>
           <div class="mobile-link-ul">
             <ul class="mobile-link-item">
-             
-              <a class="mobile-tel" href="#">
-                +38 096 111 11 11
-              </a>
-              </li>
+              <li class="mobile-link"><a class="mobile-tel" href="#"> +38 096 111 11 11</a></li>
 
               <li class="mobile-link">
-                <a class="mobile-email" href="#">
-                  info@devstudio.com</a>
+                <a class="mobile-email" href="#"> info@devstudio.com</a>
               </li>
             </ul>
-          </div>
-          <div class="mobile-social">
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
+            <ul class="mobile-social">
+              <li><a class="social" href="#">Instagram</a></li>
+              <li><a class="social" href="#">Twitter</a></li>
+              <li><a class="social" href="#">Facebook</a></li>
+              <li><a class="social" href="#">LinkedIn</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -157,23 +157,33 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="./images/computer1.jpg 1x, ./images/computer1@2x_740-588.jpg 2x"
-                  
                 />
-                <img src="./images/computer1.jpg" alt="Людина працює за комп'ютером" width="370" height="294" />
+                <img
+                  src="./images/computer1.jpg"
+                  alt="Людина працює за комп'ютером"
+                  width="370"
+                  height="294"
+                />
               </picture>
-             
+
               <div class="img-text">
                 <h3 class="text">Декстопні додатки</h3>
               </div>
             </li>
             <li class="item item-text">
               <picture>
-                <source  
-                media="(min-width: 1200px)"
-                srcset="./images/computer2.jpg 1x, ./images/computer2@2x_740-588.jpg 2x ">
-                <img src="./images/computer2.jpg" alt="Людина з телефоном в руках" width="370" height="294" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/computer2.jpg 1x, ./images/computer2@2x_740-588.jpg 2x"
+                />
+                <img
+                  src="./images/computer2.jpg"
+                  alt="Людина з телефоном в руках"
+                  width="370"
+                  height="294"
+                />
               </picture>
-             
+
               <div class="img-text">
                 <h3 class="text">Мобільні додатки</h3>
               </div>
@@ -181,13 +191,18 @@
             <li class="item item-text">
               <picture>
                 <source
-                media="(min-width: 1200px)"
-                srcset="./images/computer3.jpg 1x, ./images/computer3@2x_740-588.jpg 2x ">
-                
-                  <img src="./images/computer3.jpg" alt="Людина з планшетом в руках" width="370" height="294" />
+                  media="(min-width: 1200px)"
+                  srcset="./images/computer3.jpg 1x, ./images/computer3@2x_740-588.jpg 2x"
+                />
 
+                <img
+                  src="./images/computer3.jpg"
+                  alt="Людина з планшетом в руках"
+                  width="370"
+                  height="294"
+                />
               </picture>
-            
+
               <div class="img-text">
                 <h3 class="text">Дизайнерські рішення</h3>
               </div>
@@ -202,18 +217,33 @@
           <ul class="team">
             <li class="section-item">
               <picture>
-                <source media="(min-width: 1200px)"
-                srcset="./images/igor.jpg 1x, ./images/igor@2x_540-520.jpg 2x ">
-                <source media="(max-width: 1199px)" 
-                srcset="./images/tablet/igor@1x_354-374.jpg 1x, ./images/tablet/igor@2x_708-748.jpg 2x ">
                 <source
-                media="(max-width: 767px)"
-                srcset="./images/mobile/igor@1x_450-460.jpg 1x, ./images/mobile/igor@2x_900-920.jpg 2x ">
+                  media="(min-width: 1200px)"
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x_540-520.jpg 2x"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/tablet/igor@1x_354-374.jpg 1x,
+                    ./images/tablet/igor@2x_708-748.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/igor@1x_450-460.jpg 1x,
+                    ./images/mobile/igor@2x_900-920.jpg 2x
+                  "
+                />
 
-                <img src="./images/igor.jpg" alt="Чоловік в окулярах, що посміхається" width="270" height="260"/>
-
+                <img
+                  src="./images/igor.jpg"
+                  alt="Чоловік в окулярах, що посміхається"
+                  width="270"
+                  height="260"
+                />
               </picture>
-              
+
               <div class="foto">
                 <h3 class="title-img">Ігор Дем'яненко</h3>
                 <p class="about-team">Product Designer</p>
@@ -252,19 +282,35 @@
 
             <li class="section-item">
               <picture>
-                <source media="(min-width: 1200px)" 
-                srcset="./images/olga.jpg 1x, ./images/olga@2x_540-520.jpg 2x ">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/olga.jpg 1x, ./images/olga@2x_540-520.jpg 2x"
+                />
 
-                 <source media="(max-width: 1199px)"
-                  srcset="./images/tablet/olga@1x_354-374.jpg 1x, ./images/tablet/olga@2x_708-748.jpg 2x ">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/tablet/olga@1x_354-374.jpg 1x,
+                    ./images/tablet/olga@2x_708-748.jpg 2x
+                  "
+                />
 
-                <source media="(max-width: 767px)"
-                  srcset="./images/mobile/olga@1x_450-460.jpg 1x, ./images/mobile/olga@2x_900-920.jpg 2x ">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/olga@1x_450-460.jpg 1x,
+                    ./images/mobile/olga@2x_900-920.jpg 2x
+                  "
+                />
 
-
-                <img src="./images/olga.jpg" alt="Жінка, що посміхається" width="270" height="260" />
+                <img
+                  src="./images/olga.jpg"
+                  alt="Жінка, що посміхається"
+                  width="270"
+                  height="260"
+                />
               </picture>
-              
+
               <div class="foto">
                 <h3 class="title-img">Ольга Рєпіна</h3>
                 <p class="about-team">Frontend Developer</p>
@@ -303,19 +349,30 @@
 
             <li class="section-item">
               <picture>
-                <source media="(min-width: 1200px)"
-                 srcset="./images/mukola.jpg 1x, ./images/mukola@2x_540-520.jpg 2x ">
-                 
-                <source media="(max-width: 1199px)"
-                  srcset="./images/tablet/mukola@1x_354-374.jpg 1x, ./images/tablet/mukola@2x_708-748.jpg 2x ">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/mukola.jpg 1x, ./images/mukola@2x_540-520.jpg 2x"
+                />
 
-                <source media="(max-width: 767px)"
-                  srcset="./images/mobile/mukola@1x_450-460.jpg 1x, ./images/mobile/mukola@2x_900-920.jpg 2x ">
-          
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/tablet/mukola@1x_354-374.jpg 1x,
+                    ./images/tablet/mukola@2x_708-748.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/mukola@1x_450-460.jpg 1x,
+                    ./images/mobile/mukola@2x_900-920.jpg 2x
+                  "
+                />
+
                 <img src="./images/mukola.jpg" alt="Чоловік з посмішкою" width="270" height="260" />
-
               </picture>
-              
+
               <div class="foto">
                 <h3 class="title-img">Микола Тарасов</h3>
                 <p class="about-team">Marketing</p>
@@ -354,18 +411,35 @@
 
             <li class="section-item">
               <picture>
-               <source media="(min-width: 1200px)" 
-                srcset="./images/muhailo.jpg 1x, ./images/muhailo@2x_540-520.jpg 2x ">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/muhailo.jpg 1x, ./images/muhailo@2x_540-520.jpg 2x"
+                />
 
-              <source media="(max-width: 1199px)" 
-              srcset="./images/tablet/muhailo@1x-354-374 1x, ./images/tablet/muhailo@2x-708-748.jpg 2x ">
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/tablet/muhailo@1x-354-374     1x,
+                    ./images/tablet/muhailo@2x-708-748.jpg 2x
+                  "
+                />
 
-              <source media="(max-width: 767px)"
-              srcset="./images/mobile/muhailo@1x_450-460.jpg 1x, ./images/mobile/muhailo@2x_900-920.jpg 2x ">
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/muhailo@1x_450-460.jpg 1x,
+                    ./images/mobile/muhailo@2x_900-920.jpg 2x
+                  "
+                />
 
-              <img src="./images/muhailo.jpg" alt="Чоловік, що посміхається" width="270" height="260" />
+                <img
+                  src="./images/muhailo.jpg"
+                  alt="Чоловік, що посміхається"
+                  width="270"
+                  height="260"
+                />
               </picture>
-           
+
               <div class="foto">
                 <h3 class="title-img">Михайло Єрмаков</h3>
                 <p class="about-team">UI Designer</p>
