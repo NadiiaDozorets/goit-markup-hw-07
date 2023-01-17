@@ -24,17 +24,21 @@
           >Web<span class="logo-studio-header">Studio</span></a
         >
         <button
-          class="menu-button is-open"
+          class="menu-toggle js-open-menu"
           aria-expanded="false"
           type="button"
           aria-controls="mobile-menu"
         >
           <svg width="40" height="40" aria-label="Перевимикач мобільного меню">
-            <use class="icon-cross" href="./images/cross-menu.svg#cross"></use>
             <use class="icon-menu" href="./images/cross-menu.svg#menu"></use>
           </svg>
         </button>
         <div class="menu-desktop menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu" type="button">
+            <svg width="40" height="40" aria-label="Перевимикач мобільного меню">
+              <use class="icon-cross" href="./images/cross-menu.svg#cross"></use>
+            </svg>
+          </button>
           <nav>
             <ul class="site-nav">
               <li class="item">

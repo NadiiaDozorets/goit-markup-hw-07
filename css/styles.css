@@ -1197,7 +1197,7 @@ ul {
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none;l
 }
 
 .backdrop.is-hidden .modal {
@@ -1540,7 +1540,7 @@ ul {
   }
 }
 
-/*.menu-toggle {
+menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -1561,41 +1561,36 @@ ul {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: var(--color-inverted);
 }
-*/
-
-@media screen and (max-width: 767px) {
-  .menu-container {
-    position: fixed;
-    top: 20%;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 40px;
-
-    display: block;
-    background-color: var(--color-white);
-    overflow-y: scroll;
-  }
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--color-white);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
-
-/*z-index: 999;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-}
-
-/*.menu-container.is-open {
+.menu-container.is-open {
   transform: translateX(0);
 }
 
-/*.menu-container .menu-toggle {
+.menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: var(--color-white);
-}*/
+  color: #fff;
+  outline: 1px solid red;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat
+  
+}
+
 
 @media screen and (min-width: 768px) {
   .mobile-link-ul,
@@ -1634,6 +1629,7 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: rgba(117, 117, 117, 1);
 }
 
 .mobile-social {
@@ -1651,23 +1647,20 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-  .menu-button {
+  .menu-toggle {
     display: inline-flex;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    border: none;
     background-color: transparent;
   }
 
-  .menu-button .icon-cross {
+  .menu-toggle .icon-cross {
     display: none;
   }
 
-  .menu-button.is-open .icon-cross {
-    display: block;
-  }
 
-  .menu-button.is-open .icon-menu {
-    display: none;
-  }
+
+.menu-toggle:hover > .icon-cross {
+  stroke: var(--color-inverted);
 }
