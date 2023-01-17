@@ -1540,7 +1540,8 @@ ul {
   }
 }
 
-menu-toggle {
+@media screen and (max-width: 767px) {
+  .menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -1553,11 +1554,6 @@ menu-toggle {
   border: none;
   border-radius: 50%;
   outline: none;
-}
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -1583,13 +1579,22 @@ menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
-  outline: 1px solid red;
+  color: var(--color-white);
+  outline: 1px solid black;
   background-color: transparent;
   background-size: contain;
-  background-repeat: no-repeat
-  
+  background-repeat: no-repeat;
+  }
 }
+
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
 
 
 @media screen and (min-width: 768px) {
