@@ -691,12 +691,12 @@ ul {
     height: 400px;
     width: 100vw;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/mobile/people@1x_480-400.jpg ');
+      url('../images/mobile/people@1x-480-400.jpg ');
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-img {
-      background-image: url('../images/mobile/people@2x_960-800.jpg');
+      background-image: url('../images/mobile/people@2x-960-800.jpg');
     }
   }
 }
@@ -706,12 +706,12 @@ ul {
     height: 400px;
     width: 100vw;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/tablet/people@1x_768-400.jpg');
+      url('../images/tablet/people@1x-768-400.jpg');
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-img {
-      background-image: url('../images/tablet/people@2x_1536-800.jpg');
+      background-image: url('../images/tablet/people@2x-1536-800.jpg');
     }
   }
 }
@@ -719,7 +719,7 @@ ul {
 @media screen and (min-width: 1200px) {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-img {
-      background-image: url('../images/people@2x_1200-3200.jpg');
+      background-image: url('../images/people@2x-1200-3200.jpg');
     }
   }
 }
