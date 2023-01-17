@@ -155,7 +155,7 @@
             <li class="item item-text">
               <picture>
                 <source
-                  media="min-width: 1200px"
+                  media="(min-width: 1200px)"
                   srcset="./images/computer1.jpg 1x, ./images/computer1@2x_740-588.jpg 2x"
                   
                 />
@@ -169,7 +169,7 @@
             <li class="item item-text">
               <picture>
                 <source  
-                media="min-width: 1200px"
+                media="(min-width: 1200px)"
                 srcset="./images/computer2.jpg 1x, ./images/computer2@2x_740-588.jpg 2x ">
                 <img src="./images/computer2.jpg" alt="Людина з телефоном в руках" width="370" height="294" />
               </picture>
@@ -181,7 +181,7 @@
             <li class="item item-text">
               <picture>
                 <source
-                media="min-width: 1200px"
+                media="(min-width: 1200px)"
                 srcset="./images/computer3.jpg 1x, ./images/computer3@2x_740-588.jpg 2x ">
                 
                   <img src="./images/computer3.jpg" alt="Людина з планшетом в руках" width="370" height="294" />
@@ -202,17 +202,15 @@
           <ul class="team">
             <li class="section-item">
               <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./images/igor.jpg 1x, ./images/igor@2x_540-520.jpg 2x ">
+                <source media="(max-width: 1199px)" 
+                srcset="./images/tablet/igor@1x_354-374.jpg 1x, ./images/tablet/igor@2x_708-748.jpg 2x ">
                 <source
-                media="max-width: 767px"
+                media="(max-width: 767px)"
                 srcset="./images/mobile/igor@1x_450-460.jpg 1x, ./images/mobile/igor@2x_900-920.jpg 2x ">
 
-                <source media="max-width: 1199px" 
-                srcset="./images/tablet/igor@1x_354-374.jpg 1x, ./images/tablet/igor@2x_708-748.jpg 2x ">
-
-                <source media="min-width: 1200px"
-                    srcset="./images/igor.jpg 1x, ./images/igor@2x_540-520.jpg 2x ">
-
-                <img src="./images/igor.jpg" alt="Чоловік в окулярах, що посміхається" width="270" height="260" />
+                <img src="./images/igor.jpg" alt="Чоловік в окулярах, що посміхається" width="270" height="260"/>
 
               </picture>
               
@@ -254,14 +252,15 @@
 
             <li class="section-item">
               <picture>
-                <source media="max-width: 767px"
-                  srcset="./images/mobile/olga@1x_450-460.jpg 1x, ./images/mobile/olga@2x_900-920.jpg 2x ">
-                
-                <source media="max-width: 1199px"
-                  srcset="./images/tablet/olga@1x_354-374.jpg 1x, ./images/tablet/olga@2x_708-748.jpg 2x ">
-                
-                <source media="min-width: 1200px" 
+                <source media="(min-width: 1200px)" 
                 srcset="./images/olga.jpg 1x, ./images/olga@2x_540-520.jpg 2x ">
+
+                 <source media="(max-width: 1199px)"
+                  srcset="./images/tablet/olga@1x_354-374.jpg 1x, ./images/tablet/olga@2x_708-748.jpg 2x ">
+
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile/olga@1x_450-460.jpg 1x, ./images/mobile/olga@2x_900-920.jpg 2x ">
+
 
                 <img src="./images/olga.jpg" alt="Жінка, що посміхається" width="270" height="260" />
               </picture>
@@ -304,15 +303,15 @@
 
             <li class="section-item">
               <picture>
-                <source media="max-width: 767px"
-                  srcset="./images/mobile/mukola@1x_450-460.jpg 1x, ./images/mobile/mukola@2x_900-920.jpg 2x ">
-                
-                <source media="max-width: 1199px"
-                  srcset="./images/tablet/mukola@1x_354-374.jpg 1x, ./images/tablet/mukola@2x_708-748.jpg 2x ">
-                
-                <source media="min-width: 1200px"
+                <source media="(min-width: 1200px)"
                  srcset="./images/mukola.jpg 1x, ./images/mukola@2x_540-520.jpg 2x ">
+                 
+                <source media="(max-width: 1199px)"
+                  srcset="./images/tablet/mukola@1x_354-374.jpg 1x, ./images/tablet/mukola@2x_708-748.jpg 2x ">
 
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile/mukola@1x_450-460.jpg 1x, ./images/mobile/mukola@2x_900-920.jpg 2x ">
+          
                 <img src="./images/mukola.jpg" alt="Чоловік з посмішкою" width="270" height="260" />
 
               </picture>
@@ -355,17 +354,16 @@
 
             <li class="section-item">
               <picture>
-                <source media="max-width: 767px"
-                  srcset="./images/mobile/muhailo@1x_450-460.jpg 1x, ./images/mobile/muhailo@2x_900-920.jpg 2x ">
-                
-                <source media="max-width: 1199px"
-                  srcset="./images/tablet/muhailo@1x-354-374 1x, ./images/tablet/muhailo@2x-708-748.jpg 2x ">
-                
-                <source media="min-width: 1200px" 
+               <source media="(min-width: 1200px)" 
                 srcset="./images/muhailo.jpg 1x, ./images/muhailo@2x_540-520.jpg 2x ">
 
-                  <img src="./images/muhailo.jpg" alt="Чоловік, що посміхається" width="270" height="260" />
+              <source media="(max-width: 1199px)" 
+              srcset="./images/tablet/muhailo@1x-354-374 1x, ./images/tablet/muhailo@2x-708-748.jpg 2x ">
 
+              <source media="(max-width: 767px)"
+              srcset="./images/mobile/muhailo@1x_450-460.jpg 1x, ./images/mobile/muhailo@2x_900-920.jpg 2x ">
+
+              <img src="./images/muhailo.jpg" alt="Чоловік, що посміхається" width="270" height="260" />
               </picture>
            
               <div class="foto">

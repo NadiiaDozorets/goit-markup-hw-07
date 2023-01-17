@@ -31,7 +31,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .container {
@@ -93,7 +93,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .nav-header {
-    
     height: 60px;
   }
 }
@@ -112,7 +111,6 @@ img {
     align-items: center;
   }
 }
-
 
 /*SINE-NAV*/
 
@@ -251,14 +249,11 @@ ul {
   color: var(--color-inverted);
 }
 
-
 @media screen and (max-width: 767px) {
   .link-item {
     display: none;
-    
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .link-item {
@@ -684,18 +679,13 @@ ul {
   background-position: center;
 }
 
-
 @media screen and (min-width: 1200px) {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .hero-img {
-        background-image: url('../images/people@2x_1200-3200.jpg');
-      }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: url('../images/people@2x_1200-3200.jpg');
     }
   }
-
-
+}
 
 @media screen and (max-width: 767px) {
   .hero-img {
@@ -705,13 +695,11 @@ ul {
       url('../images/mobile/people@1x_480-400.jpg ');
   }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .hero-img {
-        background-image: url('../images/mobile/people@2x_960-800.jpg');
-      }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: url('../images/mobile/people@2x_960-800.jpg');
     }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -722,13 +710,11 @@ ul {
       url('../images/tablet/people@1x_768-400.jpg');
   }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .hero-img {
-        background-image: url('../images/tablet/people@2x_1536-800.jpg');
-      }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: url('../images/tablet/people@2x_1536-800.jpg');
     }
+  }
 }
 
 .section-team {
@@ -1585,10 +1571,11 @@ ul {
 
     display: block;
     background-color: var(--color-white);
-    overflow-y: scroll;}
+    overflow-y: scroll;
   }
+}
 
-    /*z-index: 999;
+/*z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
@@ -1605,17 +1592,12 @@ ul {
   color: var(--color-white);
 }*/
 
-
-
-
-
 @media screen and (min-width: 768px) {
   .mobile-link-ul,
   .mobile-social,
   .menu-button {
-      display: none;
-    }
- 
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1625,25 +1607,18 @@ ul {
     padding: 0;
     border: 1px solid red;
     background-color: transparent;
-    
   }
 
   .menu-button .icon-cross {
     display: none;
   }
- 
+
   .menu-button.is-open .icon-cross {
     display: block;
   }
 
-
- .menu-button.is-open .icon-menu {
-   display: none;
- }
-
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
 }
-
-  
-  
-
 
