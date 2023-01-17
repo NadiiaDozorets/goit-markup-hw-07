@@ -684,13 +684,7 @@ ul {
   background-position: center;
 }
 
-@media screen and (min-width: 1200px) {
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero-img {
-      background-image: url('../images/people@2x_1200-3200.jpg');
-    }
-  }
-}
+
 
 @media screen and (max-width: 767px) {
   .hero-img {
@@ -718,6 +712,14 @@ ul {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-img {
       background-image: url('../images/tablet/people@2x_1536-800.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: url('../images/people@2x_1200-3200.jpg');
     }
   }
 }
@@ -1668,4 +1670,5 @@ ul {
 
 .menu-toggle:hover > .icon-cross {
   stroke: var(--color-inverted);
+}
 }
