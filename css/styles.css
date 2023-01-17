@@ -691,7 +691,7 @@ ul {
     height: 400px;
     width: 100vw;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/people.jpg');
+      url('../images/mobile/people@1x_480-400.jpg ');
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -706,7 +706,7 @@ ul {
     height: 400px;
     width: 100vw;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/people.jpg');
+      url('../images/tablet/people@1x_768-400.jpg');
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
