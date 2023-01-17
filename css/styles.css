@@ -268,7 +268,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .link-item {
     display: block;
-    margin-left: 96px;
+    margin-left: 50px;
   }
 }
 
@@ -371,7 +371,6 @@ ul {
 @media screen and (max-width: 767px) {
   .details {
     flex-wrap: wrap;
-
     justify-content: center;
   }
 }
@@ -379,13 +378,13 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .details {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .details-item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
     margin-bottom: 30px;
   }
   .details-item:nth-child(2n) {
@@ -592,6 +591,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -620,6 +620,7 @@ ul {
   .section-item {
     flex-basis: calc(100% / 2 - 30px);
     margin-bottom: 30px;
+    margin-right: 0;
   }
 
   .section-item:nth-child(2) {
@@ -690,7 +691,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-img {
-    /*height: 400px;*/
+    height: 400px;
     width: 100vw;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/Tablet/people@1x_768-400.jpg');
@@ -1178,12 +1179,29 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   min-height: 581px;
-  min-width: 528px;
 
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+*@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
 }
 
 .button-modal {
@@ -1210,6 +1228,12 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1199px) {
+  .button-modal {
+    margin-left: 412px;
+  }
+}
+
 .button-modal:hover > .icon-close {
   fill: var(--color-inverted);
 }
@@ -1217,6 +1241,12 @@ ul {
 .form {
   width: 448px;
   margin: 0 40px 30px 40px;
+}
+
+@media screen and (max-width: 1199px) {
+  .form {
+    width: 370px;
+  }
 }
 
 .input {
@@ -1316,7 +1346,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .button-third {
     display: block;
     margin-top: 20px;
@@ -1394,6 +1424,13 @@ ul {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .agreement {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
 .input-form:hover,
 .input-form:focus,
 .textarea:hover,
@@ -1457,8 +1494,9 @@ ul {
   }
 }
 
-/*@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
-}*/
+}
