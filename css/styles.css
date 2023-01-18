@@ -379,7 +379,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .details-item {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 15px);
     margin-bottom: 30px;
   }
 
