@@ -414,7 +414,6 @@ ul {
 
 @media screen and (max-width: 767px) {
   .icon-details {
-    width: 95vw;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -453,7 +452,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .title {
-    margin-left: 15px;
+    text-align: center;
   }
 }
 
@@ -607,7 +606,6 @@ ul {
 
 @media screen and (max-width: 768px) {
   .section-item {
-    width: 100vw;
     margin-right: 0px;
     margin-bottom: 30px;
   }
@@ -732,8 +730,21 @@ ul {
 
 .icon-social {
   display: flex;
-  justify-content: space-between;
+
   /*outline: 1px solid red;*/
+}
+
+
+@media screen and (max-width: 1199px) {
+ .icon-social {
+  justify-content: center;
+}
+}
+
+@media screen and (min-width: 1200px) {
+ .icon-social {
+  justify-content: space-between;
+}
 }
 
 .comand {
