@@ -47,13 +47,13 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 767px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    max-width: 1199px;
+    max-width: 768px;
   }
 }
 
@@ -1249,17 +1249,12 @@ ul {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    max-width: 100vw;
+    max-width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal {
-    width: 450px;
-  }
-}
 
 *@media screen and (min-width: 1200px) {
   .modal {
@@ -1301,22 +1296,24 @@ ul {
   fill: var(--color-inverted);
 }
 
-.form {
-  width: 448px;
-  margin: 0 40px 30px 40px;
-}
 
-@media screen and (max-width: 767px) {
-  .form {
-    width: 80vw;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .form {
     width: 370px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .form {
+   width: 448px;
+   margin: 0 40px 30px 40px;
+  }
+}
+
+
+
+
+
 
 .input {
   position: relative;
