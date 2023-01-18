@@ -152,11 +152,18 @@ img {
   .link-tel-email {
     padding-top: 21px;
     padding-bottom: 5px;
+    font-size: 12px;
   }
 
   .tel {
     padding-top: 5px;
     padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-tel-email {
+    font-size: 14px;
   }
 }
 
@@ -281,7 +288,6 @@ ul {
 .link-tel-email {
   margin-right: 30px;
   color: var(--color-brand);
-  font-size: 14px;
   text-decoration: none;
   line-height: 1.1;
   font-weight: 500;
@@ -348,13 +354,24 @@ ul {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
   .secondary-title {
     font-size: 28px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .secondary-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .secondary-title {
+    margin-bottom: 50px;
   }
 }
 
