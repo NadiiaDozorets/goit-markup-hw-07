@@ -1300,6 +1300,7 @@ ul {
 @media screen and (max-width: 1199px) {
   .form {
     width: 370px;
+    margin: 0 40px 30px 40px;
   }
 }
 
@@ -1607,7 +1608,6 @@ ul {
   top: 16px;
   right: 16px;
   color: var(--color-white);
-  outline: 1px solid black;
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1686,12 +1686,6 @@ ul {
     border: none;
     background-color: transparent;
   }
-
-  .menu-toggle .icon-cross {
-    display: none;
-  }
-
-
 
 .menu-toggle:hover > .icon-cross {
   stroke: var(--color-inverted);
